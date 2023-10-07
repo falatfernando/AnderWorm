@@ -17,3 +17,5 @@ Dataset Sources
 Temperature:
 In discussion we conclued that we should normalize the data to reflect a biological organism Cy3 gene expression between different temperatures.
 
+New Solution:
+For a new solution we found the article Effects of microgravity on DNA damage response in Caenorhabditis elegans during Shenzhou-8 spaceflight and will be using the for base analysis 
