@@ -1,0 +1,13 @@
+﻿Source Name,Sample Name,Characteristics: Organism,Characteristics: Strain,Characteristics: Material Type,Factor Value: Genotype,Protocol REF,Factor Value: Spaceflight,Factor Value: Altered Gravity,Parameter Value: Growth Temperature,Parameter Value: Absorbed Radiation Dose,Parameter Value: Sample Preservation Method
+N2 Spaceflight Static con,GSM2412681,Caenorhabditis elegans,N2,Whole Organism,Wild Type,sample collection,Space Flight,uG,23 +/- 0.5 degree Celsius,1.92 milligray,Liquid Nitrogen
+LS292 Spaceflight Static con,GSM2412682,Caenorhabditis elegans,LS292,Whole Organism,dys-1(cx18) I,sample collection,Space Flight,uG,23 +/- 0.5 degree Celsius,1.92 milligray,Liquid Nitrogen
+MT4930 Spaceflight Static con,GSM2412683,Caenorhabditis elegans,MT4930,Whole Organism,ced-1(n1995) I,sample collection,Space Flight,uG,23 +/- 0.5 degree Celsius,1.92 milligray,Liquid Nitrogen
+N2 Spaceflight 1g -centrifugal con,GSM2412684,Caenorhabditis elegans,N2,Whole Organism,Wild Type,sample collection,Space Flight,1G in Centrifuge,23 +/- 0.5 degree Celsius,2.27 milligray,Liquid Nitrogen
+LS292 Spaceflight 1g-centrifugal con,GSM2412685,Caenorhabditis elegans,LS292,Whole Organism,dys-1(cx18) I,sample collection,Space Flight,1G in Centrifuge,23 +/- 0.5 degree Celsius,2.27 milligray,Liquid Nitrogen
+MT4930 Spaceflight 1g-centrifugal con,GSM2412686,Caenorhabditis elegans,MT4930,Whole Organism,ced-1(n1995) I,sample collection,Space Flight,1G in Centrifuge,23 +/- 0.5 degree Celsius,2.27 milligray,Liquid Nitrogen
+N2 Ground control con,GSM2412687,Caenorhabditis elegans,N2,Whole Organism,Wild Type,sample collection,Ground Control,1G,23 +/- 0.5 degree Celsius,0 milligray,Liquid Nitrogen
+LS292 Ground control con,GSM2412688,Caenorhabditis elegans,LS292,Whole Organism,dys-1(cx18) I,sample collection,Ground Control,1G,23 +/- 0.5 degree Celsius,0 milligray,Liquid Nitrogen
+MT4930 Ground control con,GSM2412689,Caenorhabditis elegans,MT4930,Whole Organism,ced-1(n1995) I,sample collection,Ground Control,1G,23 +/- 0.5 degree Celsius,0 milligray,Liquid Nitrogen
+N2 Transport control con,GSM2412690,Caenorhabditis elegans,N2,Whole Organism,Wild Type,sample collection,Ground Control,1G,23 +/- 0.5 degree Celsius,0 milligray,Liquid Nitrogen
+LS292 Transport control con,GSM2412691,Caenorhabditis elegans,LS292,Whole Organism,dys-1(cx18) I,sample collection,Ground Control,1G,23 +/- 0.5 degree Celsius,0 milligray,Liquid Nitrogen
+MT4930 Transport control con,GSM2412692,Caenorhabditis elegans,MT4930,Whole Organism,ced-1(n1995) I,sample collection,Ground Control,1G,23 +/- 0.5 degree Celsius,0 milligray,Liquid Nitrogen
