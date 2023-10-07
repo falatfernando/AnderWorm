@@ -13,3 +13,7 @@ Dataset Sources
 6 - OSD 40 - https://osdr.nasa.gov/bio/repo/data/studies/OSD-40
 7 - OSD 425 - https://osdr.nasa.gov/bio/repo/data/studies/OSD-425
 8 - OSD 264 - https://osdr.nasa.gov/bio/repo/data/studies/OSD-264
+
+Temperature:
+In discussion we conclued that we should normalize the data to reflect a biological organism Cy3 gene expression between different temperatures.
+
