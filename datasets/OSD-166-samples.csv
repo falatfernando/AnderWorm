@@ -1,0 +1,7 @@
+﻿Source Name,Sample Name,Factor Value: weightlessness,Characteristics: Organism,Characteristics: Strain,Characteristics: Genotype,Material Type,Factor Value: absorbed radiation dose,Protocol REF
+N2 Spaceflight Static 1A,GSM2416821 milligray,μg,Caenorhabditis elegans,N2,Wild-type,total RNA extract,1.92 milligray,sample collection
+LS292 Spaceflight Static 1C,GSM2416822 milligray,μg,Caenorhabditis elegans,MT4930,ced-1(n1995) I,total RNA extract,1.92 milligray,sample collection
+N2 Spaceflgiht 1g -centrifugal 2A,GSM2416823 milligray,1g (centrifuge),Caenorhabditis elegans,N2,Wild-type,total RNA extract,2.27 milligray,sample collection
+LS292 Spaceflight 1g-centrifugal 2C,GSM2416824 milligray,1g (centrifuge),Caenorhabditis elegans,MT4930,ced-1(n1995) I,total RNA extract,2.27 milligray,sample collection
+N2 Ground control 3A,GSM2416825 milligray,1g,Caenorhabditis elegans,N2,Wild-type,total RNA extract,0 milligray,sample collection
+LS292 Ground control 3C,GSM2416826 milligray,1g,Caenorhabditis elegans,MT4930,ced-1(n1995) I,total RNA extract,0 milligray,sample collection

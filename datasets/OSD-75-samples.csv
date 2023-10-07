@@ -1,0 +1,7 @@
+﻿Source Name,Sample Name,Characteristics: organism,Material Type,Protocol REF,Parameter Value: Sample Storage Method,Protocol REF,Factor Value: Gravity,Factor Value: timepoint
+GSM674751,GSM674751 day,Caenorhabditis elegans,C. elegans,growth protocol,-80°C,sample treatment protocol,microgravity,4 day
+GSM674752,GSM674752 day,Caenorhabditis elegans,C. elegans,growth protocol,-80°C,sample treatment protocol,microgravity,8 day
+GSM674753,GSM674753 day,Caenorhabditis elegans,C. elegans,growth protocol,-80°C,sample treatment protocol,1G flight control,4 day
+GSM674754,GSM674754 day,Caenorhabditis elegans,C. elegans,growth protocol,-80°C,sample treatment protocol,1G flight control,8 day
+GSM674755,GSM674755 day,Caenorhabditis elegans,C. elegans,growth protocol,-80°C,sample treatment protocol,ground control,4 day
+GSM674756,GSM674756 day,Caenorhabditis elegans,C. elegans,growth protocol,-80°C,sample treatment protocol,ground control,8 day

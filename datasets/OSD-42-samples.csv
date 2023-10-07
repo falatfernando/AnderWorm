@@ -1,0 +1,7 @@
+﻿Source Name,Sample Name,Comment: Original Submitted Sample Name,Comment: Sample_description,Protocol REF,Characteristics: Organism,Characteristics: strain,Factor Value: Spaceflight,Protocol REF,Parameter Value: Housing temperature,Parameter Value: Exposure Duration
+GSM815903 1,Cele_CC1_wo_GC_Rep1,GSM815903 extract 1,Gene expression data from C. elegans ground control,P-GSE32949-3,Caenorhabditis elegans,CC1,Ground Control,P-GSE32949-2,25 degree Celsius,0 month
+GSM815904 1,Cele_CC1_wo_GC_Rep2,GSM815904 extract 1,Gene expression data from C. elegans ground control,P-GSE32949-3,Caenorhabditis elegans,CC1,Ground Control,P-GSE32949-2,25 degree Celsius,0 month
+GSM815905 1,Cele_CC1_wo_GC_Rep3,GSM815905 extract 1,Gene expression data from C. elegans ground control,P-GSE32949-3,Caenorhabditis elegans,CC1,Ground Control,P-GSE32949-2,25 degree Celsius,0 month
+GSM815900 1,Cele_CC1_wo_FLT_Rep1,GSM815900 extract 1,Gene expression data from C. elegans exposed to space radiation and microgravity,P-GSE32949-3,Caenorhabditis elegans,CC1,Space Flight,P-GSE32949-2,25 degree Celsius,> 6 month
+GSM815901 1,Cele_CC1_wo_FLT_Rep2,GSM815901 extract 1,Gene expression data from C. elegans exposed to space radiation and microgravity,P-GSE32949-3,Caenorhabditis elegans,CC1,Space Flight,P-GSE32949-2,25 degree Celsius,> 6 month
+GSM815902 1,Cele_CC1_wo_FLT_Rep3,GSM815902 extract 1,Gene expression data from C. elegans exposed to space radiation and microgravity,P-GSE32949-3,Caenorhabditis elegans,CC1,Space Flight,P-GSE32949-2,25 degree Celsius,> 6 month
