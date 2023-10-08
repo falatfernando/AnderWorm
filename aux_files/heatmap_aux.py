@@ -62,7 +62,7 @@ def create_heatmap(df, protein_id):
     df_heatmap = df[['PM', 'SEQ ID', 'SEQ', 'Sample']]
     df_heatmap['PM'] = df_heatmap['PM'].astype(float)
     df_heatmap.reset_index(drop=True, inplace=True)
-    aap_df = df_heatmap[df_heatmap['SEQ'] == protein_id]
+    aap_df = df_heatmap[df_heatmap['SEQ'].isin(protein_id)]
     df = aap_df
     df['SEQ'] = df['SEQ'].str.replace(r'\d+', '', regex=True)
     df['SEQ'] = df['SEQ'].replace('', pd.NA)
