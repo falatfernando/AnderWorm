@@ -41,7 +41,7 @@ protein_id = st.sidebar.multiselect("Select Protein IDs", options, [], key="prot
 
 st.sidebar.markdown("<hr> </hr>", unsafe_allow_html=True)
 
-st.sidebar.header("Data Prediction 📊")
+st.sidebar.header("Data Parameters 📊")
 
 # Display the temperature in a box
 st.sidebar.info(f"Temperature is {temperature} °C ± {variation} °C")
@@ -62,7 +62,7 @@ radiation_value = st.sidebar.slider("Radiation (miligray)", min(radiations), max
 
 # Create a heatmap based on the selected protein_id
 if st.sidebar.button("Generate Heatmap"):
-    with st.spinner('Loading you analysis...'):
+    with st.spinner('Loading your analysis...'):
         # Parameters
         folder_path = r'C:\Users\ferna\Documents\GitHub\anderworm\Project\ds_shenzou\normalized'
         transcription_file = r"C:\Users\ferna\Documents\GitHub\anderworm\Project\ds_shenzou\metadata\a_gse90786_transcription_profiling_DNA_microarray.txt"
@@ -90,7 +90,7 @@ if st.sidebar.button("Generate Heatmap"):
             sns_plot = sns.heatmap(data, xticklabels=sample_names, yticklabels=genes)
             
             # Display the plot
-            st.pyplot(plt)
+            st.pyplot(plt, transparent = True)
         with col4:
             st.warning('Mean UNF values x Temperature for C. elegans')
             # Generate the temperature plot
@@ -103,7 +103,7 @@ else:
     st.markdown("<h4 style = 'color: white; text-align: center'> Anderworm is a NASA Space APPS (2023) project </h4>"
                 , unsafe_allow_html=True)
     st.warning('Use the sidebar menu to choose between different input parameters, study the data and predict Caenorhabditis elegans genomic behaviours!')
-    st.markdown(''' <p style = 'color: white; text-align: justify'> This app was inspired by the study conducted by Gao, Y.; Xu, D.; Zhao, L.; Zhang, M.; Sun, Y. on the effects of microgravity on DNA damage response in Caenorhabditis elegans during the Shenzhou-8 spaceflight, published in the International Journal of Radiation Biology in 2015 (DOI: 10.3109/09553002.2015.1043754). The data used in this app is sourced from official NASA websites. </p>
+    st.markdown(''' <p style = 'color: white; text-align: justify'> This app was inspired by the study conducted by Gao, Y. et al on the effects of microgravity on DNA damage response in Caenorhabditis elegans during the Shenzhou-8 spaceflight, published in the International Journal of Radiation Biology in 2015 (DOI: 10.3109/09553002.2015.1043754). The data used in this app is sourced from official NASA websites. </p>
     ''', unsafe_allow_html= True)
     st.write('Developed by Fernando Falat, Henrique Galeski and Juan Penas.')
     st.markdown('<br>' '</br>', unsafe_allow_html=True)
