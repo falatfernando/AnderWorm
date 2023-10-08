@@ -6,7 +6,7 @@ from scipy.stats import norm
 
 # OSD 40 - Thermal Conditions
 current_directory = os.getcwd()
-relative_path = r'C:\Users\ferna\Documents\GitHub\anderworm\Project\datasets\temperature_osd40' 
+relative_path = r'datasets\temperature_osd40' 
 folder_path = os.path.join(current_directory, relative_path)
 
 data_frames = []
@@ -28,8 +28,8 @@ for filename in os.listdir(folder_path):
 df_temperature = pd.concat(data_frames, ignore_index=True)
 
 # Temperature studies
-df_40_samples = pd.read_csv(r"C:\Users\ferna\Documents\GitHub\anderworm\Project\datasets\temperature_osd40\OSD-40-samples.csv")
-df_40_assays = pd.read_csv(r"C:\Users\ferna\Documents\GitHub\anderworm\Project\datasets\temperature_osd40\OSD-40-assays.csv")
+df_40_samples = pd.read_csv(r"datasets\temperature_osd40\OSD-40-samples.csv")
+df_40_assays = pd.read_csv(r"datasets\temperature_osd40\OSD-40-assays.csv")
 
 # Perfoming merge with tables to extract temperature for each gene expression
 df_40 = df_temperature.merge(df_40_assays, left_on= 'Sample_Name', right_on= 'Derived Array Data File',how = 'left')
@@ -84,4 +84,4 @@ def generate_temperature_plot():
     plt.xticks(temperatures)  # Set the x-axis ticks to only the specified temperatures
 
     # Save the plot to a file
-    plt.savefig('temperature_plot.png')
+    #plt.savefig('temperature_plot.png')
