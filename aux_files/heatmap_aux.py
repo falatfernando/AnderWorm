@@ -12,7 +12,7 @@ def load_data(folder_path):
         if filename.endswith('.gz'):
             file_path = os.path.join(folder_path, filename)
             with gzip.open(file_path, 'rt') as gz_file:
-                data = pd.read_csv(gz_file, delimiter='\t', low_memory=False, dtype=str, skiprows=[0], encoding='latin-1')
+                data = pd.read_csv(gz_file, delimiter='\t', low_memory=False, dtype=str, skiprows=[0], encoding='utf-8', errors='ignore')
                 data['file_name'] = filename
                 dfs.append(data)
     return pd.concat(dfs, ignore_index=True)
