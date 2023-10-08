@@ -12,13 +12,10 @@ def load_data(folder_path):
     for filename in os.listdir(folder_path):
         if filename.endswith('.gz'):
             file_path = os.path.join(folder_path, filename)
-            try:
-                with gzip.open(file_path, 'rt') as gz_file:
-                    data = pd.read_csv(gz_file, delimiter='\t', low_memory=False, dtype=str, skiprows=[0], encoding='utf-8')
-                    data['file_name'] = filename
-                    dfs.append(data)
-            except Exception as e:
-                print('Error loading data from file {}: {}'.format(filename, e))
+            with gzip.open(file_path, 'rt') as gz_file:
+                data = pd.read_csv(gz_file, delimiter='\t', low_memory=False, dtype=str, skiprows=[0])
+                data['file_name'] = filename
+                dfs.append(data)
     return pd.concat(dfs, ignore_index=True)
 
 def merge_data(df_norm_data, df_transcription, df_samples):
