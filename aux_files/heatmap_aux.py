@@ -10,10 +10,10 @@ import seaborn as sns
 def load_data(folder_path):
     dfs = []
     for filename in os.listdir(folder_path):
-        if filename.endswith('.gz'):
+        if filename.endswith('.csv'):
             file_path = os.path.join(folder_path, filename)
-            with gzip.open(file_path, 'rt') as gz_file:
-                data = pd.read_table(gz_file, delimiter='\t', low_memory=False, dtype=str, skiprows=[0])
+            with open(file_path, 'r') as csv_file:
+                data = pd.read_csv(csv_file, delimiter='\t', low_memory=False, dtype=str, skiprows=[0])
                 data['file_name'] = filename
                 dfs.append(data)
     return pd.concat(dfs, ignore_index=True)
