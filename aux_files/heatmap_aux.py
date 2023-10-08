@@ -14,7 +14,7 @@ def load_data(folder_path):
         if filename.endswith(".csv"):
             file_path = os.path.join(folder_path, filename)
             # Read each CSV file into a DataFrame
-            temp_df = pd.read_csv(file_path, encoding='latin-1', engine='python')
+            temp_df = pd.read_csv(file_path, encoding='utf-8', engine='python')
 
             # Add a 'file_name' column with the current filename
             temp_df['file_name'] = filename
