@@ -5,8 +5,7 @@ import os
 import re
 import matplotlib.pyplot as plt
 import seaborn as sns
-import locale
-locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
+
 
 def load_data(folder_path):
     dfs = []
@@ -14,7 +13,7 @@ def load_data(folder_path):
         if filename.endswith('.gz'):
             file_path = os.path.join(folder_path, filename)
             with gzip.open(file_path, 'rt') as gz_file:
-                data = pd.read_csv(gz_file, delimiter='\t', low_memory=False, dtype=str, skiprows=[0])
+                data = pd.read_csv(gz_file, delimiter='\t', low_memory=False, dtype=str, skiprows=[0], encoding_errors='ignore')
                 data['file_name'] = filename
                 dfs.append(data)
     return pd.concat(dfs, ignore_index=True)
