@@ -8,15 +8,23 @@ import seaborn as sns
 
 
 def load_data(folder_path):
-    dfs = []
+    # Initialize an empty DataFrame to store the combined data
+    combined_df = pd.DataFrame()
+
+    # Iterate through all files in the folder
     for filename in os.listdir(folder_path):
-        if filename.endswith('.gz'):
+        if filename.endswith(".csv"):
             file_path = os.path.join(folder_path, filename)
-            with gzip.open(file_path, 'rt') as gz_file:
-                data = pd.read_csv(gz_file, delimiter='\t', low_memory=False, dtype=str, skiprows=[0])
-                data['file_name'] = filename
-                dfs.append(data)
-    return pd.concat(dfs, ignore_index=True)
+            # Read each CSV file into a temporary DataFrame
+            temp_df = pd.read_csv(file_path)
+
+            # Add a 'file_name' column with the current filename
+            temp_df['file_name'] = filename
+
+            # Append the temporary DataFrame to the combined DataFrame
+            combined_df = combined_df.append(temp_df, ignore_index=True)
+
+    return combined_df
 
 def merge_data(df_norm_data, df_transcription, df_samples):
     df_transcription['source'] = df_transcription['Derived Array Data File'].str.split('_norm').str[0]
