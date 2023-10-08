@@ -5,6 +5,8 @@ import os
 import re
 import matplotlib.pyplot as plt
 import seaborn as sns
+import locale
+locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
 def load_data(folder_path):
     dfs = []
