@@ -12,7 +12,7 @@ def load_data(folder_path):
     for filename in os.listdir(folder_path):
         if filename.endswith('.csv'):
             file_path = os.path.join(folder_path, filename)
-            with open(file_path, 'r') as csv_file:
+            with open(file_path, 'rb') as csv_file:
                 data = pd.read_csv(csv_file, delimiter='\t', skiprows=[0])
                 data['file_name'] = filename
                 dfs.append(data)

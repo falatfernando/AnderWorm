@@ -1,6 +1,7 @@
 import os
 import gzip
 import pandas as pd
+import chardet
 
 def convert_pair_gz_to_csv(folder_path):
     for file_name in os.listdir(folder_path):
@@ -9,10 +10,10 @@ def convert_pair_gz_to_csv(folder_path):
                 with open(os.path.join(folder_path, file_name[:-8] + '.csv'), 'wb') as f_out:
                     f_out.write(f_in.read())
 
-convert_pair_gz_to_csv(r'C:\Users\ferna\Documents\GitHub\anderworm\Project\ds_shenzou\normalized')
-print('done')
+#convert_pair_gz_to_csv(r'C:\Users\ferna\Documents\GitHub\anderworm\Project\ds_shenzou\normalized')
+#print('done')
 
-import chardet
+
 
 def detect_encoding(file_path):
     with open(file_path, 'rb') as file:
