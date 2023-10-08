@@ -33,7 +33,7 @@ variation = 0.5
 ############################################# SIDEBAR #########################################################################
 
 # Data selection
-with open('\aux_files\list.txt', "r") as file:
+with open('aux_files/list.txt', "r") as file:
     options = file.read().splitlines()
 
 st.sidebar.header("Data Analysis 🔎")
@@ -64,10 +64,10 @@ radiation_value = st.sidebar.slider("Radiation (miligray)", min(radiations), max
 if st.sidebar.button("Generate Heatmap"):
     with st.spinner('Loading you analysis...'):
         # Parameters
-        folder_path = r'ds_shenzou\normalized'
-        transcription_file = r"ds_shenzou\metadata\a_gse90786_transcription_profiling_DNA_microarray.txt"
+        folder_path = 'ds_shenzou/normalized'
+        transcription_file = "ds_shenzou/metadata/a_gse90786_transcription_profiling_DNA_microarray.txt"
         df_transcription = pd.read_csv(transcription_file, delimiter='\t')
-        samples_file = r'ds_shenzou\samples\OSD-167-samples.csv'
+        samples_file = 'ds_shenzou/samples/OSD-167-samples.csv'
         df_samples = pd.read_csv(samples_file)
         df_norm_data = load_data(folder_path)
         merged_data = merge_data(df_norm_data, df_transcription, df_samples)
