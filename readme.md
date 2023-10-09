@@ -3,7 +3,7 @@
 
 
 # Ander Worm
-<sub>Developed by [Fernando Falat](https://www.linkedin.com/in/fernandofalat/), [Henrique Galeski](https://www.linkedin.com/in/henriquegaleski/), and [Juan Harbar Penas](https://www.linkedin.com/in/jhpenas/), for [NASA Space Apps Challenge 2023](https://www.spaceappschallenge.org/).</sub>
+<sub>Developed by [Fernando Falat](https://www.linkedin.com/in/fernandofalat/), [Henrique Galeski](https://github.com/hrgaleski), and [Juan Harbar Penas](https://github.com/jhpenas/portfolio), for [NASA Space Apps Challenge 2023](https://www.spaceappschallenge.org/).</sub>
 
 
 
